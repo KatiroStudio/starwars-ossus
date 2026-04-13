@@ -6,7 +6,7 @@
 |-------|------|-------------|
 | `id` | string | Unique UUID |
 | `name` | string | Official planet name |
-| `region` | string | Galactic region (see regions below) |
+| `region` | string | Galactic region |
 | `sector` | string | Sector name |
 | `grid` | string | Grid square (ex: `M-10`) |
 | `galactic_x` | number | X coordinate in parsecs from Coruscant |
@@ -18,10 +18,9 @@
 | `climate` | string | Climate description |
 | `terrain` | string | Terrain type |
 | `atmosphere` | string | Atmosphere classification |
-| `type` | string | Planet style (see types below) |
+| `style` | string | Visual type (see values below) |
 
-> All planets in this dataset are canon or canon_and_legends.
-> Fields with no data are omitted (not set to null).
+> Fields with no data are omitted rather than set to null.
 
 ---
 
@@ -29,28 +28,6 @@
 
 `Deep Core` · `Core Worlds` · `Colonies` · `Inner Rim` · `Expansion Region` · `Mid Rim` · `Outer Rim Territories` · `Wild Space` · `Unknown Regions` · `Hutt Space` · `Corporate Sector` · `Chiss Space`
 
-## Planet types
+## Planet style values
 
 `desert` · `ice` · `lava` · `ocean` · `forest` · `city` · `gas` · `barren` · `temperate` · `swamp` · `rocky` · `tropical` · `crystal`
-
-## Canonicity values
-
-| Value | Meaning |
-|-------|---------|
-| `canon` | Disney-era canon only |
-| `legends` | Legends / pre-Disney only |
-| `canon_and_legends` | Appears in both |
-
-## Appearances object
-
-```json
-{
-  "title": "A New Hope",
-  "type": "film",
-  "year": 1977
-}
-```
-
-| Field | Values |
-|-------|--------|
-| `type` | `film` · `serie` · `roman` · `comic` · `anime` · `jeu` |

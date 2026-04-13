@@ -35,10 +35,6 @@ In Star Wars lore, **Coruscant** is the galaxy's capital planet and the origin p
 
 So if a planet has `galactic_x: 243, galactic_y: -327`, it is located 243 parsecs to the right and 327 parsecs below Coruscant on the standard galactic map.
 
-> Coordinates in this dataset were extracted from the [official Star Wars Galaxy Map](https://www.starwars.com/star-wars-galaxy-map) using OCR and coordinate triangulation. They are approximately accurate. The galaxy is big, we did our best.
-
----
-
 ### The grid system
 
 The galaxy is divided into a **grid of named squares**, each identified by a letter (column) and a number (row), for example `M-10` or `R-16`.
@@ -47,9 +43,7 @@ The galaxy is divided into a **grid of named squares**, each identified by a let
 - **Rows** go from `1` (top) to `27` (bottom), roughly north to south
 - **Coruscant** sits at approximately `L-9`, near the galactic center
 
-The grid is a navigational convention used by pilots, cartographers and the Imperial Navy alike. It appears on the official Star Wars Galaxy Map and in many in-universe documents.
-
----
+The grid is a navigational convention used by pilots, cartographers and the Imperial Navy alike.
 
 ### Galactic regions
 
@@ -94,18 +88,12 @@ The galaxy is divided into concentric regions, from the dense core to the wild f
 
 ---
 
-## 🤝 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). Corrections and additions are welcome via Pull Request or Issue.
-
----
-
 ## ⚠️ Disclaimer
 
 Fan-made project. Star Wars and all related properties are trademarks of Lucasfilm Ltd. / Disney.
 
 **Data sources:**
 - [Wookieepedia](https://starwars.fandom.com), the galaxy's most reliable encyclopedia
-- [Star Wars Galaxy Map](https://www.starwars.com/star-wars-galaxy-map), from which planet positions were extracted using OCR and coordinate triangulation
+- [Star Wars Galaxy Map](https://www.starwars.com/star-wars-galaxy-map), from which planet positions were extracted using OCR and coordinate triangulation. They are approximately accurate. The galaxy is big, we did our best.
 
 Community corrections welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
