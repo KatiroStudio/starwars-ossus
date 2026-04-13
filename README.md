@@ -8,6 +8,14 @@ This repository follows the spirit of its namesake: the ancient Jedi library pla
 
 ---
 
+## 👋 Why this exists
+
+I'm a Star Wars fan who wanted to build something precise — a complete, structured database of planets and timeline events. When I started looking, I couldn't find anything complete enough to work with. So I built it myself.
+
+This is fan work, done with care. If you're also obsessed with getting the details right, contributions are welcome.
+
+---
+
 ## 📦 Contents
 
 | File | Description |
