@@ -19,10 +19,8 @@
 | `terrain` | string | Terrain type |
 | `atmosphere` | string | Atmosphere classification |
 | `type` | string | Planet style (see types below) |
-| `canonicity` | string | Canon status (see values below) |
-| `appearances` | array | List of media appearances |
-| `description_fr` | string | Description in French |
 
+> All planets in this dataset are canon or canon_and_legends.
 > Fields with no data are omitted (not set to null).
 
 ---
