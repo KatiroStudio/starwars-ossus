@@ -54,4 +54,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — corrections and additions are welcome
 ## ⚠️ Disclaimer
 
 Fan-made project. Star Wars and all related properties are trademarks of Lucasfilm Ltd. / Disney.
-Data sourced from [Wookieepedia](https://starwars.fandom.com), [SWAPI](https://swapi.info) and community contributions.
+
+**Data sources:**
+- [Wookieepedia](https://starwars.fandom.com) — the galaxy's most reliable encyclopedia
+- [Star Wars Galaxy Map](https://www.starwars.com/star-wars-galaxy-map) — the official interactive map, from which planet positions were extracted using OCR and coordinate triangulation. Results are approximately accurate. The galaxy is big, we did our best.
+
+Community corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
