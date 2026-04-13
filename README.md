@@ -22,7 +22,6 @@ This is fan work, done with care. If you're also obsessed with getting the detai
 |------|-------------|
 | `data/planets.json` | 1,361 canon planets with coordinates, regions and physical data |
 | `data/events.json` | Timeline events *(coming soon)* |
-| `SCHEMA.md` | Full field descriptions and data types |
 | `CONTRIBUTING.md` | How to suggest corrections or additions |
 
 ---
@@ -66,6 +65,48 @@ The galaxy is divided into concentric regions, from the dense core to the wild f
 
 ---
 
+## 📋 Data schema
+
+### `data/planets.json`
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique UUID |
+| `name` | string | Official planet name |
+| `region` | string | Galactic region (see regions above) |
+| `sector` | string | Sector name. The galaxy contains over 1,000 known sectors, each grouping several star systems. |
+| `grid` | string | Grid square (ex: `M-10`) |
+| `galactic_x` | number | X coordinate in parsecs from Coruscant |
+| `galactic_y` | number | Y coordinate in parsecs from Coruscant |
+| `galactic_z` | number | Z coordinate in parsecs from Coruscant |
+| `suns` | number | Number of suns |
+| `moons` | number | Number of moons |
+| `diameter` | number | Diameter in km |
+| `climate` | string | Climate description |
+| `terrain` | string | Terrain type |
+| `atmosphere` | string | Atmosphere type (see classification below) |
+| `style` | string | Visual type used for map rendering |
+
+> Fields with no data are omitted rather than set to null.
+
+### Atmosphere classification
+
+Star Wars uses a standardized atmosphere classification system:
+
+| Type | Breathable | Description |
+|------|-----------|-------------|
+| **Type I** | Yes | Standard oxygen/nitrogen mix, breathable by most species without assistance |
+| **Type II** | Limited | Breathable but uncomfortable — thin, dense, or mildly irritating atmosphere |
+| **Type III** | No | Requires a breath mask or filter |
+| **Type IV** | No | Toxic or corrosive, requires a sealed suit or full life support |
+| **Type V** | No | Immediately lethal without full environmental protection |
+
+### Planet style values
+
+`desert` · `ice` · `lava` · `ocean` · `forest` · `city` · `gas` · `barren` · `temperate` · `swamp` · `rocky` · `tropical` · `crystal`
+
+---
+
 ## 🌍 Planet data sample
 
 ```json
@@ -82,15 +123,18 @@ The galaxy is divided into concentric regions, from the dense core to the wild f
   "diameter": 10465,
   "climate": "Arid",
   "terrain": "Desert",
+  "atmosphere": "Type I",
   "style": "desert"
 }
 ```
 
 ---
 
-## ⚠️ Disclaimer
+## 📄 License
 
-Fan-made project. Star Wars and all related properties are trademarks of Lucasfilm Ltd. / Disney.
+The compiled dataset (structure, coordinates, curation work) is released under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**: free to use, share and adapt with attribution.
+
+Star Wars and all related properties are trademarks of Lucasfilm Ltd. / Disney. This project has no affiliation with or endorsement from Lucasfilm or Disney.
 
 **Data sources:**
 - [Wookieepedia](https://starwars.fandom.com), the galaxy's most reliable encyclopedia
